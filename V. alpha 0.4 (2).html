@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia 8B</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #search {
+            width: 50%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .article {
+            display: none; /* Hide articles by default */
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        /* Show the home section by default */
+        #home {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Wikipedia 8B</h1>
+        <input type="text" id="search" placeholder="Search articles..." onkeyup="searchArticles()">
+    </header>
+
+    <nav>
+        <a href="#home" onclick="showArticle('home')">Home</a>
+        <a href="#main" onclick="showArticle('main')">Main</a>
+        <a href="#" onclick="showArticle('article4')"></a>
+        <a href="#" onclick="showArticle('article3')"></a>
+    </nav>
+    <main id="content">
+        <section id="home">
+            <h2>Wikipedia 8B edition</h2>
+            <p>Wikipedia klon für die 8B und weitere</p>
+        </section>
+
+        <section id="main" class="article">
+            <h2>Main</h2>
+            <p>das ist gemacht von <a href="#article4" onclick="showArticle('article4')">Matti</a> und <a href="#article7" onclick="showArticle('article7')">Silas</a></p>
+            <p>Es ist gemacht um alles ungefähr festzuhalten ob es referenzen, witze, ereignisse oder personen sind alles kann hier rein. </p>
+            <p>Personen die bis jetzt vorkommen sind <a href="#article7" onclick="showArticle('article7')">Silas</a>, <a href="#article4" onclick="showArticle('article4')">Matti</a>, <a href="#article9" onclick="showArticle('article9')">Ben</a>, <a href="#article11" onclick="showArticle('article11')">Andre</a>, <a href="#article13" onclick="showArticle('article13')">Arkadi</a>, <a href="#article20" onclick="showArticle('article20')">Tom</a>, <a href="#article23" onclick="showArticle('article23')">Jonas</a></p></p>
+        </section>
+
+        <section id="article4" class="article">
+            <h2>Matti</h2>
+            <p></p>
+            <p>Die einzige Person die an Wikipedia 8B arbeitet da alle anderen nicht wissen wie man coded.</p>
+            <p></p>
+            <p></p>
+            <p>referenzen: <a href="#article5" onclick="showArticle('article5')">Mochi</a>,<a href="#article6" onclick="showArticle('article6')">Parklatz Matti</a></p>
+        </section>
+
+        <section id="article5" class="article">
+            <h2>Mochi</h2>
+            <p>mochi ist eigentlich eine Japanische spezalität aber wird als spitzname für matti verwendet -_-</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvM6133RSQ8Eibm2E4wqsRO-XtT7C9hURvrw&s" width="300" height="300">
+        </section>
+
+        <section id="article6" class="article">
+            <h2>Parkplatz Matti</h2>
+            <p><a href="#article7" onclick="showArticle('article7')">Silas</a> hat ein Parkplatz auf Google maps erstellt mit dem namen Parkplatz Matti.</p>
+            <p>Er existirte, aber nur für 1 Minute and wurde dann zu <a href="#article8" onclick="showArticle('article8')">Parkplatz Silas</a> geändert. </p>
+
+        </section>
+
+        <section id="article8" class="article">
+            <h2>Parkplatz Silas</h2>
+            <p>Der Parkplatz Silas ist ein Parkplatz der von <a href="#article4" onclick="showArticle('article4')">Matti</a> dazu geändert wurde. davor hieß er <a href="#article6" onclick="showArticle('article6')">Parkplatz Matti</a>. </p>
+            <p>Parkplatz Silas wurde danach aber auch einfach nur zu Parkplatz und danach Parkplatz der Sporthalle geändert.</p>
+
+        </section>
+
+        <section id="article7" class="article"> 
+            <h2>Silas</h2>
+            <p>Silas ist Ein <a href="#article15" onclick="showArticle('article15')">Tischtennis Profi</a> der Jedes mal wenn er in einen Raum rein geht es schafft das jeder andere raus geht.</p>
+            <p>Silas ist auch im <a href="https://www.faustball.com/#/main/news">Faustball</a> verein mit Matti <a href="#article16" onclick="showArticle('article16')">(Tus Oberbruch)</a></p>
+            <p>referenzen: <a href="#article8" onclick="showArticle('article8')">Parkplatz Silas</a>, <a href="#article16" onclick="showArticle('article16')">(Tus Oberbruch)</a>, <a href="#article17" onclick="showArticle('article17')">Sporthalle Silas M.</a></p>
+        </section>
+
+        <section id="article9" class="article">
+            <h2>Ben</h2>
+            <p>Isst alles was er sieht und was lecker aussieht würde warscheinlich auch Waschmachinen tabs essen.</p>
+            <p>referenzen: <a href="#article10" onclick="showArticle('article10')">Benjamin Blümchen</a></p>
+
+        </section>
+
+        <section id="article10" class="article">
+            <h2>Benjamin Blümchen</h2>
+            <p>Benjamin Blümchen ist eine kinder serie die als spitzname für <a href="#article9" onclick="showArticle('article9')">Benjamin</a> benutzt wird</p>
+            <img src="https://www.kiddinx.de/sites/default/files/styles/charackter/public/2018-09/ben.png?itok=p3FC_TA8" height="300" width="300">
+            <p><a href="https://de.wikipedia.org/wiki/Benjamin_Bl%C3%BCmchen">(Wikipedia)</a></p>
+        </section>
+
+        <section id="article11" class="article">
+            <h2>Andre</h2>
+            <p>Andre ist ein Römer der gerne die welt erobern würde sein plan ist es polen einzunehmen.</p>
+            <p>Er ist auch ein Bruder von <a href="#article13" onclick="showArticle('article13')">Arkadi</a>.</p>
+            <p>referenzen: <a href="#article14" onclick="showArticle('article14')">Römer</a>,<a href="#article13" onclick="showArticle('article13')">Arkadi</a>,<a href="#article12" onclick="showArticle('article12')">Andre's pläne</a></p>
+        </section>
+
+        <section id="article12" class="article">
+            <h2>Andre's pläne</h2>
+            <p><a href="#article11" onclick="showArticle('article11')">Andre</a></p>
+            <p>Andre's pläne sind es die welt zu erobern er fängt an mit polen.</p>
+            <p>Wenn er es halb durch Polen schafft ruft er <a href="#article9" onclick="showArticle('article9')">Ben</a> um ihn zu helfen den rest einzunehmen.
+            <p>Ben kommt im Panzer und Andre schafft es Polen zu erobern..</p>
+            <p>To Be Continued</p>
+        </section>
+
+        <section id="article13" class="article">
+            <h2>Arkadi</h2>
+            <p>Arkadi ist ein Bruder von <a href="#articl11" onclick="showArticle('article11')">Andre</a> und auch ein <a href="#article14" onclick="showArticle('article14')">Römer</a>.</p>
+            <p>Referenzen: <a href="#article14" onclick="showArticle('article14')">Römer</a>, <a href="#articl11" onclick="showArticle('article11')">Andre</a></p>
+        </section>
+
+        <section id="article14" class="article">
+            <h2>Römer</h2>
+            <p>Die Römer sind wieder da diesmal ohne reich!</p>
+            <p>bestandteile: <a href="#article4" onclick="showArticle('article4')">Matti</a>, <a href="#article11" onclick="showArticle('article11')">Andre</a>, <a href="#article13" onclick="showArticle('article13')">Arkadi</a></p>
+        </section>
+        <section id="article15" class="article">
+            <h2>Tischtennis</h2>
+            <p>Tischtennis spielen <a href="#article4" onclick="showArticle('article4')">Matti</a> und <a href="#article7" onclick="showArticle('article7')">Silas</a>, aber nur <a href="#article7" onclick="showArticle('article7')">Silas</a> im verrein.</p>
+            <img src="https://ttc-unterbruch.de/files/Galerie/Vereinsmeisterschaften%202024/PXL_20241025_232825094.MP.jpg">
+        </section>
+        <section id="article16" class="article">
+            <h2>Tus Oberbruch</h2>
+            <p>Der Tus Oberbruch ist der Faustball verein von Oberbruch</p>
+            <p>Personen im Verein sind <a href="#article4" onclick="showArticle('article4')">Matti</a> und <a href="#article7" onclick="showArticle('article7')">Silas</a></p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR885IojFFzX7wzSFehSTIhM51OvZ4InoADWbfC7cZa8yLtlU8pjw5cJESeJ3hbnw6ksxQ&usqp=CAU">
+        </section>
+        <section id="article17" class="article">
+            <h2>Sporthalle Silas M.</h2>
+            <p>Die Sporthalle der Schule wurde als <a href="#article18" onclick="showArticle('article18')">Sporthalle Matti D.</a> zu Google Maps hinzugefügt und dann zu Sporthalle Silas M. geändert</p>
+            <p>Referenzen: <a href="#article4" onclick="showArticle('article4')">Matti</a> und <a href="#article7" onclick="showArticle('article7')">Silas</a>, <a href="#article18" onclick="showArticle('article18')">Sporthalle Matti D.</a></p>
+        </section>
+        <section id="article18" class="article">
+            <h2>Sporthalle Matti D.</h2>
+            <p>Die Sporthalle der Schule wurde von <a href="#article7" onclick="showArticle('article7')">Silas</a> auf Google Maps erstellt mit dem Namen "Sporthalle Matti D." und danach geändert zu <a href="#article17" onclick="showArticle('article17')">Sporthalle Silas M.</a>.</p>
+            <p>Referenzen: <a href="#article4" onclick="showArticle('article4')">Matti</a> und <a href="#article7" onclick="showArticle('article7')">Silas</a>, <a href="#article17" onclick="showArticle('article17')">Sporthalle Silas M.</a></p>
+        </section>
+        <section id="article19" class="article">
+            <h2>Parkplatz Silas M. (befort)</h2>
+            <p><a href="#article4" onclick="showArticle('article4')">Matti</a> hatte in Google Maps ein Parkplatz Hinzugefügt der für die erste zeit unentdeckt blieb</p>
+        </section>
+        <section id="article20" class="article">
+            <h2>Tom</h2>
+            <p>Tom ist tom und mag gerne traktoren. Er ist ein autist und sein bester freund ist luka.</p>
+            <p>Referenzen : Tranzschule Tom, <a href="#article21" onclick="showArticle('article21')">Toms Schlüpfer</a>, Traktor</p>
+        </section>
+
+        <section id="article21" class="article">
+            <h2>Toms Schlüpfer</h2>
+            <p>Toms schlüpfer ist ein Sprichwort, was Jonas in einer englischstunde erfand, als er <a href="#article20" onclick="showArticle('article20')">Tom</a> mobbte. Manche sagen Toms Schlüpfer riecht nach Käse</p>
+        </section>
+        
+        <section id="article23" class="article">
+            <h2>Jonas</h2>
+            <p>Jonas ist bekannt für seine Kleinwüchsigkeit. Er wollte im verein mit <a href="#article16" onclick="showArticle('article16')">Faustball</a> spielen anfangen, doch ihm tat der Arm weh</p>
+            <p>Referenzen : <a href="#article24" onclick="showArticle('article24')">Jonas Ai</a>, <a href="#article5" onclick="showArticle('article5')">Mochi</a>, </p>
+
+        </section>
+
+        <section id="article24" class="article">
+            <h2>Jonas Ai</h2>
+            <p>Ursprünglich kommt Jonas Ai aus Afrika, als <a href="#article7" onclick="showArticle('article7')">Silas</a> ein paar afrikanische Tiktoker fragte, Jonas zu grüßen.</p>
+        </section>
+    </main>
+
+    </main>
+
+    <script>
+        function searchArticles() {
+            const input = document.getElementById('search').value.toLowerCase();
+            const articles = document.querySelectorAll('.article');
+
+            articles.forEach(article => {
+                const title = article.querySelector('h2').textContent.toLowerCase();
+                if (title.includes(input)) {
+                    article.style.display = 'block'; // Show matching articles
+                } else {
+                    article.style.display = 'none'; // Hide non-matching articles
+                }
+            });
+        }
+
+        function showArticle(articleId) {
+    const articles = document.querySelectorAll('.article');
+    const homeSection = document.getElementById('home');
+    
+    articles.forEach(article => {
+        article.style.display = 'none'; // Hide all articles
+    });
+    
+    homeSection.style.display = 'none'; // Hide the home section
+    document.getElementById(articleId).style.display = 'block'; // Show the selected article
+}
+    </script>
+</body>
+
+</html>
