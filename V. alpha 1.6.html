@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia 8B</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #search {
+            width: 50%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .demo {
+            display: none;
+}
+
+        .article {
+            display: none; /* Hide articles by default */
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin: 10px;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        /* Show the home section by default */
+        #home {
+            display: block;
+        }
+        .invisible-article {
+    display: none; /* Hide articles by default */
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+}
+    </style>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>Wikipedia 8B</h1>
+        <input type="text" id="search" placeholder="Search articles..." onkeyup="searchArticles()">
+    </header>
+
+    <nav>
+        <a href="#home" onclick="showArticle('home')">Home</a>
+        <a href="#main" onclick="showArticle('main')">Main</a>
+        <a href="#personen" onclick="showArticle('article25')">Personen</a>
+        <a href="#googlemaps" onclick="showArticle('article22')">Google Maps Orte</a>
+        <a href="#Spitznamen" onclick="showArticle('article57')">Spitznamen</a>
+        <a href="#wichtige wörter" onclick="showArticle('article59')">Wichtige Wörter</a>
+    </nav>
+    <main id="content">
+        <section id="home">
+            <h2>Wikipedia 8B edition</h2>
+            <p>Wikipedia klon für die <a href="#article31" onclick="showArticle('article31')">8B</a> und weitere</p>
+            <img onclick="showArticle('article28')" src="https://gesamtschule-heinsberg.de/storage/slider/img_6019_klein.jpg" height="400" widht="550" />
+            <p>**bild führt zu Artikel von Gesamtschule Heinsberg-Waldfeucht**</p>
+        </section>
+
+        <section id="main" class="article">
+            <h2>Main</h2>
+            <p>das ist gemacht von <a href="#article4" onclick="showArticle('article4')">Matti</a> und <a href="#article7" onclick="showArticle('article7')">Silas</a></p>
+            <p>Es ist gemacht um alles ungefähr festzuhalten ob es referenzen, witze, ereignisse oder personen sind alles kann hier rein. </p>
+            <p><a href="#article25" onclick="showArticle('article25')">Personen</a></p>
+        </section>
+
+        <section id="article4" class="article">
+            <h2>Matti</h2>
+            <p>Die einzige Person die an Wikipedia 8B arbeitet da alle anderen nicht wissen wie man coded.</p>
+            <p>Matti ist auch im <a href="https://www.faustball.com/#/main/news">Faustball</a> verein mit <a href="#article7" onclick="showArticle('article7')">Silas</a> <a href="#article16" onclick="showArticle('article16')">(Tus Oberbruch)</a></p>
+            <p>referenzen: <a href="#article5" onclick="showArticle('article5')">Mochi</a>,<a href="#article6" onclick="showArticle('article6')">Parklatz Matti</a></p>
+            <img src="https://i.ibb.co/1JPsMw6/b6052708-a66f-44f4-a954-e3f49b9847fc.jpg" height="345" width="200">
+        </section>
+
+        <section id="article5" class="article">
+            <h2>Mochi</h2>
+            <p>mochi ist eigentlich eine Japanische spezalität aber wird als spitzname für matti verwendet -_-</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvM6133RSQ8Eibm2E4wqsRO-XtT7C9hURvrw&s" width="300" height="300">
+        </section>
+
+        <section id="article6" class="article">
+            <h2>Parkplatz Matti</h2>
+            <p><a href="#article7" onclick="showArticle('article7')">Silas</a> hat ein Parkplatz auf <a href="#article22" onclick="showArticle('article22')">Google Maps</a> erstellt mit dem namen Parkplatz Matti.</p>
+            <p>Er existirte, aber nur für 1 Minute and wurde dann zu <a href="#article8" onclick="showArticle('article8')">Parkplatz Silas</a> geändert. </p>
+
+        </section>
+
+        <section id="article8" class="article">
+            <h2>Parkplatz Silas</h2>
+            <p>Der Parkplatz Silas ist ein Parkplatz der von <a href="#article4" onclick="showArticle('article4')">Matti</a> auf <a href="#article22" onclick="showArticle('article22')">Google Maps</a> dazu geändert wurde. davor hieß er <a href="#article6" onclick="showArticle('article6')">Parkplatz Matti</a>. </p>
+            <p>Parkplatz Silas wurde danach aber auch einfach nur zu Parkplatz und danach Parkplatz der Sporthalle geändert.</p>
+
+        </section>
+
+        <section id="article7" class="article"> 
+            <h2>Silas</h2>
+            <p>Silas ist Ein <a href="#article15" onclick="showArticle('article15')">Tischtennis Profi</a> der Jedes mal wenn er in einen Raum rein geht es schafft das jeder andere raus geht.</p>
+            <p>Silas ist auch im <a href="https://www.faustball.com/#/main/news">Faustball</a> verein mit <a href="#article4" onclick="showArticle('article4')">Matti</a> <a href="#article16" onclick="showArticle('article16')">(Tus Oberbruch)</a></p>
+            <p>referenzen: <a href="#article8" onclick="showArticle('article8')">Parkplatz Silas</a>, <a href="#article16" onclick="showArticle('article16')">(Tus Oberbruch)</a>, <a href="#article17" onclick="showArticle('article17')">Sporthalle Silas M.</a></p>
+            <img src="https://i.ibb.co/xGj1ryZ/eecded74-b165-4713-bfe8-5727e82c81d7.jpg" height="250" width="200">
+        </section>
+
+        <section id="article9" class="article">
+            <h2>Ben</h2>
+            <p>Isst alles was er sieht und was lecker aussieht würde warscheinlich auch Waschmachinen tabs essen.</p>
+            <p>Er ist auch immer hyperaktiv außer im Unterricht wo er häufig kurz vor dem einschlafen ist.</p>
+            <p>einer der spiele die Ben gerne spielt ist Anno 2070 wo er sehr gut ist.</p>
+            <p>referenzen: <a href="#article10" onclick="showArticle('article10')">Benjamin Blümchen</a></p>
+            <img src="https://i.ibb.co/XJCMFzY/IMG-20240903-095826.jpg" height="250" width="200">
+
+        </section>
+
+        <section id="article10" class="article">
+            <h2>Benjamin Blümchen</h2>
+            <p>Benjamin Blümchen ist eine kinder serie die als spitzname für <a href="#article9" onclick="showArticle('article9')">Benjamin</a> benutzt wird</p>
+            <img src="https://www.kiddinx.de/sites/default/files/styles/charackter/public/2018-09/ben.png?itok=p3FC_TA8" height="300" width="300">
+            <p><a href="https://de.wikipedia.org/wiki/Benjamin_Bl%C3%BCmchen">(Wikipedia)</a></p>
+        </section>
+
+        <section id="article11" class="article">
+            <h2>Andre</h2>
+            <p>Andre ist ein Römer der gerne die welt erobern würde sein plan ist es polen einzunehmen.</p>
+            <p>Er ist auch ein Bruder von <a href="#article13" onclick="showArticle('article13')">Arkadi</a>.</p>
+            <p>Andre hat häufig viel energie und ist sehr stark (viele wissen es nicht).</p>
+            <p>Die zeitpläne von Andre sind häufig sehr eng und kann deswegen auch häufig nicht Anno 2070 oder andere Spiele nicht mitspielen.</p>
+            <img height="300" width="150" src="https://i.ibb.co/F6s52sn/bbf77e85-802c-40d0-a984-e1267589c61f.jpg">
+            <p>referenzen: <a href="#article14" onclick="showArticle('article14')">Römer</a>,<a href="#article13" onclick="showArticle('article13')">Arkadi</a>,<a href="#article12" onclick="showArticle('article12')">Andre's pläne</a></p>
+        </section>
+
+        <section id="article12" class="article">
+            <h2>Andre's pläne</h2>
+            <p><a href="#article11" onclick="showArticle('article11')">Andre</a></p>
+            <p>Andre's pläne sind es die welt zu erobern er fängt an mit polen.</p>
+            <p>Wenn er es halb durch Polen schafft ruft er <a href="#article9" onclick="showArticle('article9')">Ben</a> um ihn zu helfen den rest einzunehmen.</p>
+            <p><a href="#article9" onclick="showArticle('article9')">Ben</a> kommt im Panzer und Versucht <a href="#article11" onclick="showArticle('article11')">Andre</a> zu helfen es zu vervollständigen.</p>
+            <p>als die die Hauptstadt Warschau eingenommen wurde gab polen auf, weil sie angst hatten das Trauma des 2. Weltkriegs erneut zu erleben.</p>
+            <p><a href="#article11" onclick="showArticle('article11')">Andre</a> und <a href="#article9" onclick="showArticle('article9')">Ben</a> sind sehr Glücklich mit dem Erfolg und wollen jetzt weitermachen.</p>
+            <p>Als nächstes wollen sie nach Tschechien aber bevor sie das tun wollen sie sich nochmal mit <a href="#article13" onclick="showArticle('article13')">Arkadi</a> treffen, da sie wissen das er ihnen helfen kann.</p>
+            <p>Bevor sie Tschechien erobern wollen sie ihre neue kreation testen und die mit aus FNAF inspirierten Springlocks gefüllten anzüge an den Polnern austesten.</p>
+            <p>Diese benutzen sie in ihrer neuen Restaurant kette namens Andre Böttcher's Bier.</p>
+            <p>Sie versuchen die ereignisse aus FNAF nachzuspielen um herraus zu finden was wirklich passieren würde.</p>
+            <p>Dazu holen sie <a href="#article34" onclick="showArticle('article34')">Domenik</a> als <a href="https://fnafapedia.fandom.com/wiki/Protagonists">Nightguard</a></p>
+            <p>Daraus erstellen sie ein Buch um mehr Geld für den Krieg zu finanzieren. sie nennen das Buch <a href="#article60/1" onclick="showArticle('article60/1')">"Der schrei des Domenikaner"</a></p>
+            <p>Jetzt vedienten sie sich mehr Geld um als nächstes Tschechien zu erobern.</p>
+            <p>Als sie anfingen kamen sie sehr leicht durch und konnten in nur 1 Tag fast bis zur Hauptstadt.</p>
+            <p>Aber dann musste <a href="#article9" onclick="showArticle('article9')">Ben</a> in seinem Panzer "Komen" und verlierte seine Kraft.</p>
+            <p>Aber Arkadi kam und half ihm und sie konnten weitermachen.</p>
+            <p>Und schafften dann in 2 weiteren tagen den rest Tschechiens.</p>
+            <p>Als sie dann zurück kamen nach Deutschland kam <a href="#article7" onclick="showArticle('article7')">Silas</a> und lenkte sie ab bei ihrer mission.</p>
+            <p>Desegen nam <a href="#article9" onclick="showArticle('article9')">Ben</a> ein gewehr und schießte <a href="#article7" onclick="showArticle('article7')">Silas</a> ab so dass sie sich konzentrieren konnten</p>
+            <p>Als sie zu ihrer Restaurant kette zurück kamen war viel verwüstet und kaputt aber als sie rein gingen bereuten sie die anzüge gebaut zu haben da sie ihre eigenen gedanken bekamen und nicht mehr ihren befehlen befolgten.</p>
+            <p>Obwohl es für sie eine sehr gute chance war um ihr zweites Buch zu schreiben.</p>
+            <p>Indem sie über <a href="#article34" onclick="showArticle('article34')">Domeniks</a> Erfolge redeten und wie er alle nächte die ganze Nacht durch arbeitete.</p>
+            <p>Das Buch hieß "Der Schrei des Domenikaners 2" und wurde ein großer Erfolg da er auf eine reale Story basierte.</p>
+            <p>Jetzt haben sie aber noch nicht genug geld um weiter zu machen da bens panzer kaputt ging und sie viel des Geldes in die Restaurants gesteckt haben oder beim glücksspiel verloren.</p>
+            <p>Jetzt müssen sie sich entscheiden was sie machen um mehr Geld zu machen. </p>
+            <p>Und sie holten <a href="#article20" onclick="showArticle('article20')">Tom</a> als Sentimentale unterstützung und ihn als schild gegen die gegner zu verwenden.
+            <p>Für das Geld problem haben sie <a href="#article21" onclick="showArticle('article21')">Toms Schlüpfer</a> verkauft und damit viel gemacht.</p>
+            <p>Jetzt haben sie genug Geld um weiter nach österreich zu gehen, haben aber probleme durch das Land zu kommen, da österreich schon vorbereitet war.</p>
+            <p><a href="#article34" onclick="showArticle('article34')">Domenik</a> rufte sie dann vom Restaurant an und sagte <a href="#article37" onclick="showArticle('article37')">Sammy</a> sei auf dem weg.</p>
+            <p>Sie warteten 1 tag und hielten stellung in der Kleinstadt "Fucking" wo <a href="#article37" onclick="showArticle('article37')">Sammy</a> dann eintrat.</p>
+            <p>Ihre hilfe war es, dass sie jede möglichen Flüche auf die gegner setzten kann indem sie Gott und den Teufel gleichzeitig um hilfe bat.</p>
+            <p>Ihre sehr nette art war auch sehr hilfreich um die anderen aufzumuntern.</p>
+            <p>Als sie dann weiter kamen wurde es schwierig da sie durch die alpen mussten.</p>
+            <p>Aber Andre hatte eine idee indem er einfach mit seiner Kraft die anderen über die Berge trug.</p>
+            <p>Und so kamen sie weiter und durch die Berge wo die österreicher schon warten aber ohne waffen da sie es friedlich lösen wollten und sich ihnen anschließen.</p>
+            <p>ihr nächstes ziel war slovenien aber sie mussten sich erstmal ausruhen da sie sehr müde waren und Geld brauchten.</p>
+            <p>Als erstes gingen sie <a href="#article7" onclick="showArticle('article7')">Silas</a> und <a href="#article4" onclick="showArticle('article4')">Matti</a> besuchen, die in einem anderen weg die anderen länder besiegten.</p>
+            <p>Nämlich waren sie in der <a href="Faustball.com">Faustball</a> WM spielten.</p>
+            <p><a href="#article9" onclick="showArticle('article9')">Ben</a> ging aber nicht zuruck und ging sondern zu den Restaurants um ein Auge of <a href="#article34" onclick="showArticle('article34')">Domenik</a> zu halten.</p>
+            <p><a href="#article34" onclick="showArticle('article34')">Domenik</a> ist aber nichts passiert da er <a href="#article34" onclick="showArticle('article34')">Domenik</a> ist.</p>
+            <p><a href="#article9" onclick="showArticle('article9')">Ben</a> wusste aber dass er noch ein 3. buch schreiben musste aber das Buch war nicht so einfach wie die anderen da nicht viel passiert war.</p>
+            <p>Also baute er an einem Videospiel dass die Leser spielen Konnten um sich in das Buch Reinfinden zu können.</p>
+            <p>Das Buch war also fertig, aber das Buch war wie zu erwarten nicht ganz so gut wie die letzten also Rufte <a href="#article9" onclick="showArticle('article9')">Ben</a> <a href="#article4" onclick="showArticle('article4')">Matti</a> an so dass er das Spiel entwickelte. </p>
+            <p>Das Spiel war ein großer Erfolg und Machte den misserfolg des Buches wett.</p>
+            <p>Aber Sie waren noch nicht bereit um weiter zu machen da sie gerade in Deutschland Blieben.</p>
+            <p>Also beschlossen sie nach berlin zu reisen um sich mit Olaf Scholz zu treffen um ihre Mission zu erklären.</p>
+            <p>Aber Olaf Scholz war nicht einverstanden.</p>
+            <p>Also beschlossen sie nach Wien zu reisen um sich mit Sebastian Kurz zu besprechen über die nächsten ziele und wie sie sie erreichen können ohne Deutschland mit einzuziehen.</p>
+            <p>Sebastian Kurz war aber aber einverstanden damit dass österreich das Gebiet von Slovenien bekommt dafür dass sie helfen.</p>
+            <p>Also beschlossen sie nach Slovenien zu reisen um ihre Mission weiter zu führen.</p>
+            <p>Als sie dann in Slovenien ankamen war es sehr friedlich also wussten sie nicht was sie angreifen sollten.</p>
+            <p>Aber <a href="#article9" onclick="showArticle('article9')">Ben</a> war dies Egal und er Flug in seinem Helikopter und schoss alles ab was sich bewegte.</p>
+            <p>Und so konnte <a href="#article9" onclick="showArticle('article9')">Ben</a> und die anderen Slovenien erobern um es österreich zu übergeben.</p>
+            <p>Als sie dann zurück kamen nach Deutschland war es sehr still und sie wussten nicht was los war.</p>
+            <p>Also beschlossen sie nach Berlin zu reisen um heraus zu finden was los war und weitere Leute zu holen.</p>
+            <p>Als sie dann in Berlin ankamen war es Normal aber sie konnten <a href="#article23" onclick="showArticle('article23')">Jonas</a> finden und namen ihn mit da er so klein ist dass die gegner ihn nicht sehen konnten.</p>
+            <p>die andere Person war <a href="#article13" onclick="showArticle('article13')">Arkadi</a> der aber nicht auffindbar war.</p>
+            <p>als sie Nachfragten wo er war wurde ihnen gesagt er wurde ermordet von wem ist aber nicht gewusst</p>
+            <p>Darauf "komte" <a href="#article9" onclick="showArticle('article9')">Ben</a> erst mal richtig.</p>
+            <p><a href="#article11" onclick="showArticle('article11')">Andre</a> war verstört und ging in die Kirche um zu beten und wieder Heilig zu werden.</p>
+            <p>Und so ging auch mit <a href="#article37" onclick="showArticle('article37')">Sammy</a></p>
+            <p>Als <a href="#article9" onclick="showArticle('article9')">Ben</a> herrausfinden wollte wer Arkadi ermordet hatte, fand er heraus dass es Djoumy war der ihn zu stark geschlagen hat.</p>
+            <p>Also beschlossen sie nach Paris zu reisen um Djoumy zu finden da sie nicht wussten wo er war und eine ausrede brauchten um zu reisen.</p>
+            <p>Als sie dann in Paris ankamen wurden sie von präsident Macron empfangen und er sagte ihnen dass sie nicht willkommen waren.</p>
+            <p>aber das ignorierten sie und gingen weiter.</p>
+            <p><a href="#article9" onclick="showArticle('article9')">Ben</a> sagte leise 'was will dieser Macaron von uns'</p>
+            <p>das hörte Macron und sagte 'ich bin nicht Macaron sondern Macron' und ziehte dann seine maske ab und es zeigte er ist eigentlich Arne Schunack</p>
+            <p>Alle waren verwirrt aber dann sagte er 'RAUS' und <a href="#article9" onclick="showArticle('article9')">Ben</a> wurde für 2 jahre aus Frankreich ausgewiesen.</p>
+            <p>Die anderen gingen aber weiter und haben viel gegessen und sind richtig Taco Bell auf die Toilette Gegangen.</p>
+            <p>Die truppe nur noch bestehend aus <a href="#article11" onclick="showArticle('article11')">Andre</a>, <a href="#article23" onclick="showArticle('article23')">Jonas</a> und <a href="#article20" onclick="showArticle('article20')">Tom</a> hatten alle Arschjucken.</p>
+            <p>Danach gingen sie nach Deutschland zurück, da <a href="#article9" onclick="showArticle('article9')">Ben</a> nicht alleine gelassen werden darf.</p>
+            <p>Ben erzählte ihnen direkt von seinen Stuhlgängen und über seinen Hund "Dino".</p>
+            <p>Die anderen waren nicht sehr Schockiert weil dass alles war was von <a href="#article9" onclick="showArticle('article9')">Ben</a> zu erwarten war.</p>
+            <p>To be Continued.</p>
+        </section>
+
+        <section id="article13" class="article">
+            <h2>Arkadi</h2>
+            <p>Arkadi ist ein Bruder von <a href="#articl11" onclick="showArticle('article11')">Andre</a>.Arkadi ist einer der <a href="#article14" onclick="showArticle('article14')">Römer</a>.</p>
+            <p>Arkadi hat auch einen Fußfetisch und möchte fußbilder von <a href="#article4" onclick="showArticle('article4')">Matti</a> und Weiteren</p>
+            <p>Es wird auch gesagt dass Arkadi der Bruder von <a href="#article4" onclick="showArticle('article4')">Matti</a> sei, da sie beide Dünn und groß sind.</p>
+            <p><a href="#article9" onclick="showArticle('article9')">Ben</a> mag es auch mit Arkadi "Drogen" herzustellen oder<a href="#article12" onclick="showArticle('article12')">Pläne für Polen zu machen</a></p>
+            <p>Referenzen: <a href="#article14" onclick="showArticle('article14')">Römer</a>, <a href="#articl11" onclick="showArticle('article11')">Andre</a></p>
+        </section>
+
+        <section id="article14" class="article">
+            <h2>Römer (archive)</h2>
+            <p>Die Römer sind wieder da diesmal ohne reich. Da sie nur ein paar leute sind</p>
+            <p>bestandteile: <a href="#article4" onclick="showArticle('article4')">Matti</a>, <a href="#article11" onclick="showArticle('article11')">Andre</a>, <a href="#article13" onclick="showArticle('article13')">Arkadi</a></p>
+            <p>**Dieser Artikel ist "archived" da die gruppe aufgelöst ist und sollte deshalb nicht verändert werden.** </p>
+        </section>
+        <section id="article15" class="article">
+            <h2>Tischtennis</h2>
+            <p>Tischtennis spielen <a href="#article4" onclick="showArticle('article4')">Matti</a> und <a href="#article7" onclick="showArticle('article7')">Silas</a>, aber nur <a href="#article7" onclick="showArticle('article7')">Silas</a> im verrein.</p>
+            <img src="https://ttc-unterbruch.de/files/Galerie/Vereinsmeisterschaften%202024/PXL_20241025_232825094.MP.jpg">
+        </section>
+        <section id="article16" class="article">
+            <h2>Tus Oberbruch</h2>
+            <p>Der Tus Oberbruch ist der Faustball verein von Oberbruch</p>
+            <p>Personen im Verein sind <a href="#article4" onclick="showArticle('article4')">Matti</a> und <a href="#article7" onclick="showArticle('article7')">Silas</a></p>
+            <p>2 der Trainer sind: <a href="#article52" onclick="showArticle('article52')">Guido Wennmacher</a> (auf der linken Seite vom Foto) und <a href="#article51" onclick="showArticle('article51')">Jochen Jansen</a> (auf der rechten Seite vom Foto)</p>
+            <a href="https://tus-oberbruch.de/">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR885IojFFzX7wzSFehSTIhM51OvZ4InoADWbfC7cZa8yLtlU8pjw5cJESeJ3hbnw6ksxQ&usqp=CAU">
+            </a>
+        </section>
+        <section id="article17" class="article">
+            <h2>Sporthalle Silas M.</h2>
+            <p>Die Sporthalle der Schule wurde als <a href="#article18" onclick="showArticle('article18')">Sporthalle Matti D.</a> zu <a href="#article22" onclick="showArticle('article22')">Google Maps</a> hinzugefügt und dann zu Sporthalle Silas M. geändert</p>
+            <p>Referenzen: <a href="#article4" onclick="showArticle('article4')">Matti</a> und <a href="#article7" onclick="showArticle('article7')">Silas</a>, <a href="#article18" onclick="showArticle('article18')">Sporthalle Matti D.</a></p>
+        </section>
+        <section id="article18" class="article">
+            <h2>Sporthalle Matti D.</h2>
+            <p>Die Sporthalle der Schule wurde von <a href="#article7" onclick="showArticle('article7')">Silas</a> auf <a href="#article22" onclick="showArticle('article22')">Google Maps</a> erstellt mit dem Namen "Sporthalle Matti D." und danach geändert zu <a href="#article17" onclick="showArticle('article17')">Sporthalle Silas M.</a>.</p>
+            <p>Referenzen: <a href="#article4" onclick="showArticle('article4')">Matti</a> und <a href="#article7" onclick="showArticle('article7')">Silas</a>, <a href="#article17" onclick="showArticle('article17')">Sporthalle Silas M.</a></p>
+        </section>
+        <section id="article19" class="article">
+            <h2>Parkplatz Silas M. (befort)</h2>
+            <p><a href="#article4" onclick="showArticle('article4')">Matti</a> hatte in <a href="#article22" onclick="showArticle('article22')">Google Maps</a> ein Parkplatz Hinzugefügt der für die erste zeit unentdeckt blieb</p>
+            <p>aber dann von <a href="#article7" onclick="showArticle('article7')">Silas</a> entdeckt wurde.</p>
+            <p>Referenzen: <a href="#article7" onclick="showArticle('article7')">Silas</a>, <a href="#article4" onclick="showArticle('article4')">Matti</a></p>
+        </section>
+        <section id="article20" class="article">
+            <h2>Tom</h2>
+            <p>Tom ist tom und mag gerne traktoren. Er ist ein autist und sein bester freund ist luka.</p>
+            <p>Referenzen : Tranzschule Tom, <a href="#article21" onclick="showArticle('article21')">Toms Schlüpfer</a>, Traktor</p>
+        </section>
+
+        <section id="article21" class="article">
+            <h2>Toms Schlüpfer</h2>
+            <p>Toms schlüpfer ist ein Sprichwort, was <a href="#article23" onclick="showArticle('article23')">Jonas</a> in einer englischstunde erfand, als er <a href="#article20" onclick="showArticle('article20')">Tom</a> mobbte. Manche sagen Toms Schlüpfer riecht nach Käse</p>
+        </section>
+        <section id="article22" class="article">
+            <h2>Google Maps Orte:</h2>
+            <h4>A</h4>
+            <h4>B</h4>
+            <h4>C</h4>
+            <h4>D</h4>
+            <h4>E</h4>
+            <h4>F</h4>
+            <h4>G</h4>
+            <h4>H</h4>
+            <h4>I</h4>
+            <h4>J</h4>
+            <p><a href="#article49" onclick="showArticle('article49')">Jucha Matti</a></p>
+            <h4>K</h4>
+            <h4>L</h4>
+            <h4>M</h4>
+            <h4>N</h4>
+            <h4>O</h4>
+            <h4>P</h4>
+            <p><a href="#article19" onclick="showArticle('article19')">Parkplatz Silas M. (befort)</a></p>
+            <p><a href="#article6" onclick="showArticle('article6')">Parkplatz Matti</a></p>
+            <p><a href="#article8" onclick="showArticle('article8')">Parkplatz Silas</a></p>
+            <h4>Q</h4>
+            <h4>R</h4>
+            <h4>S</h4>
+            <p><a href="#article17" onclick="showArticle('article17')">Sporthalle Silas M.</a></p>
+            <p><a href="#article18" onclick="showArticle('article18')">Sporthalle Matti D.</a></p>
+            <h4>T</h4>
+            <h4>U</h4>
+            <h4>V</h4>
+            <h4>W</h4>
+            <h4>X</h4>
+            <h4>Y</h4>
+            <h4>Z</h4>
+        </section>
+        <section id="article23" class="article">
+            <h2>Jonas</h2>
+            <p>Jonas ist bekannt für seine <a href="#article26" onclick="showArticle('article26')">Kleinwüchsigkeit</a>. Er wollte im verein mit <a href="#article16" onclick="showArticle('article16')">Faustball</a> spielen anfangen, doch ihm tat der Arm weh</p>
+            <p>Jonas hatte häufig Bitlife Gespielt, tut es warscheinlich immer noch, aber nicht so häufig.</p>
+            <p>Er ist gut und lange befreundet mit <a href="#article44" onclick="showArticle('article44')">Juna</a>, die auch auf der selben straße wie er wohnt. </p>
+            <p>Referenzen : <a href="#article24" onclick="showArticle('article24')">Jonas Ai</a>, <a href="#article5" onclick="showArticle('article5')">Mochi</a>, </p>
+            <img src="https://i.ibb.co/tCrh53V/IMG-20240923-124840.jpg" height="250" width="200">
+
+        </section>
+
+        <section id="article24" class="article">
+            <h2>Jonas Ai</h2>
+            <p>Ursprünglich kommt Jonas Ai aus Afrika, als <a href="#article7" onclick="showArticle('article7')">Silas</a> ein paar afrikanische Tiktoker fragte, Jonas zu grüßen.</p>
+        </section>
+        <section id="article25" class="article">
+            <h2>Personen:</h2>
+            <h4>A</h4>
+            <p><a href="#article11" onclick="showArticle('article11')">Andre</a></p>
+            <p><a href="#article13" onclick="showArticle('article13')">Arkadi</a></p>
+            <h4>B</h4>
+            <p><a href="#article9" onclick="showArticle('article9')">Ben</a></p>
+            <h4>C</h4>
+            <h4>D</h4>
+            <p><a href="#article41" onclick="showArticle('article41')">Demian</a></p>
+            <p><a href="#article34" onclick="showArticle('article34')">Domenik</a></p>
+            <h4>E</h4>
+            <h4>F</h4>
+            <h4>G</h4>
+            <p><a href="#article27" onclick="showArticle('article27')">Gloria</a></p>
+            <p><a href="#article52" onclick="showArticle('article52')">Guido Wennmacher</a></p>
+            <h4>H</h4>
+            <h4>I</h4>
+            <h4>J</h4>
+            <p><a href="#article51" onclick="showArticle('article51')">Jochen Jansen</a></p>
+            <p><a href="#article23" onclick="showArticle('article23')">Jonas</a></p>
+            <p><a href="#article44" onclick="showArticle('article44')">Juna</a></p>
+            <h4>K</h4>
+            <h4>L</h4>
+            <p><a href="#article33" onclick="showArticle('article33')">Luka</a></p>
+            <h4>M</h4>
+            <p><a href="#article4" onclick="showArticle('article4')">Matti</a></p>
+            <p><a href="#article40" onclick="showArticle('article40')">Maximilian</a></p>
+            <h4>N</h4>
+            <p><a href="#article53" onclick="showArticle('article53')">Nico</a></p>
+            <h4>O</h4>
+            <h4>P</h4>
+            <p><a href="#article48" onclick="showArticle('article48')">Pi</a></p>
+            <h4>Q</h4>
+            <h4>R</h4>
+            <h4>S</h4>
+            <p><a href="#article7" onclick="showArticle('article7')">Silas</a></p>
+            <p><a href="#article37" onclick="showArticle('article37')">Sammy</a></p>
+            <h4>T</h4>
+            <p><a href="#article20" onclick="showArticle('article20')">Tom</a></p>
+            <h4>U</h4>
+            <h4>V</h4>
+            <h4>W</h4>
+            <h4>X</h4>
+            <h4>Y</h4>
+            <h4>Z</h4>
+        </section>
+        <section id="article26" class="article">
+            <h2>Goblin</h2>
+            <p>Es gibt viele Goblins aber das sind die kleinsten:</p>
+            <p><a href="#article23" onclick="showArticle('article23')">Jonas</a></p>
+            <p><a href="#article41" onclick="showArticle('article41')">Demian</a></p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfx75uDLsKLCc8UAiB1eauLg-6JfhJapI7eg&s4">
+        </section>
+        <section id="article28" class="article">
+            <h2>Gesamtschule Heinsberg-Waldfeucht</h2>
+            <p>Die Schule die diesen Artikel am ehensten lesen werden und mehr.</p>
+            <p>Referenzen: <a href="#article31" onclick="showArticle('article31')">8B</a></p>
+            <a href="https://www.gesamtschule-heinsberg.de/">
+            <img src="https://cms.transmatico.com/storage/pdfs/201450/extracted/img-005.png">
+            </a>
+            <p>**bild führt zu Website von Gesamtschule Heinsberg-Waldfeucht**</p>
+            <a href="https://www.gesamtschule-heinsberg.de/">
+            <img src="https://www.alliander-netz.de/wp-content/uploads/2023/10/PM-Defibrillator-1024x768.jpg">
+            </a>
+            <p>**bild führt zu Website von Gesamtschule Heinsberg-Waldfeucht**</p>
+        </section>
+        <section id="article31" class="article">
+            <h2>Klasse 8B</h2>
+            <p>Die Beste Klasse der Welt.</p>
+            <p>Die einzige Klasse die an Wikipedia arbeitet.</p>
+            <p>Referenzen: <a href="#article28" onclick="showArticle('article28')">Gesamtschule Heinsberg-Waldfeucht</a>, <a href="#article50" onclick="showArticle('article50')">KlassenGruppe 8B</a></p>
+            <img src="https://i.ibb.co/Gct3VmC/IMG-20230616-WA0002.jpg" height="300" width="400">
+        </section>
+        <section id="article33" class="article">
+            <h2>Luka</h2>
+            <p>Will immer streit suchen und hat eine gute beziehung mit <a href="#article20" onclick="showArticle('article20')">Tom</a>, sie gehen über schläge hinaus.</p>
+            <p>Referenzen: <p><a href="#article20" onclick="showArticle('article20')">Tom</a></p></p>
+            <button type="button"><img src="https://i.ibb.co/Dznnwp3/IMG-20240923-125604.jpg" width="200" height="250"></button>
+            <p id="demo" class='demo'>(Hier wird Silas von luka geschlagen.)</p>
+        </section>
+        <section id="article27" class="article">
+            <h2>Gloria</h2>
+            <p>Gloria ist das erste mädchen hier. Sie macht Paartanzen und geht zum Gym </p>
+            <p>Will immer einen Film gucken, wenn gefragt wird was wir in der Freistunde machen!</p>
+            <p>Ist aber wenn man mit ihr redet eigentlich ziemlich korrekt.</p>
+            <p>Bei der Klassenfahrt ging sie mit <a href="#article4" onclick="showArticle('article4')">Matti</a>, <a href="#article7" onclick="showArticle('article7')">Silas</a> und<a href="#article11" onclick="showArticle('article11')">Andre</a>, da niemand anderes sie in die Gruppe genommen hat.</p>
+            <p>Referenzen : <a href="#article32" onclick="showArticle('article32')">WAS?</a>, <a href="#article30" onclick="showArticle('article30')">HÄÄÄ</a>, <a href="#article29" onclick="showArticle('article29')">Pick Me</a></p>
+            <img src="https://i.ibb.co/9Vn9YFK/96825b5a-9869-460c-8e89-aeff72cb497c.jpg" height="450" width="200">
+        </section>
+
+        <section id="article29" class="article">
+            <h2>Pick Me</h2>
+            <p>Pick Me ist ein ausdruck für Leute, die goofy sind. Beispiele für Pick Me´s sind : <a href="#article27" onclick="showArticle('article27')">Gloria</a></p>
+        </section>
+
+        <section id="article30" class="article">
+            <h2>HÄÄÄ</h2>
+            <p>HÄÄÄ ist ein ausdruck, der am häufigsten von <a href="#article27" onclick="showArticle('article27')">Gloria</a> und Luka verwendet wird.</p>
+        </section>
+
+        <section id="article32" class="article">
+            <h2>WAS?</h2>
+            <p>WAS? ist ein ausdruck der meistens von <a href="#article27" onclick="showArticle('article27')">Gloria</a> gesprochen wird. Er ist ziemlich Nervig.</p>
+        </section>
+        <section id="article34" class="article">
+            <h2>Domenik</h2>
+            <p>Domenik mag ruhe da die Leute um ihn herum häufig Wild und chaotisch sind. Er ist gut befreundet mit <a href="#article37" onclick="showArticle('article37')">Sammy</a>.</p>
+            <p>Man sollte aufpassen wenn man neben ihm sitzt wenn er zockt da er sehr aggressiv wird.</p>
+            <p>Er kann auch dein Personal Coach sein wenn man es will.</p>
+            <p>Es gibt auch noch <a href="#article62" onclick="showArticle('article62')">Domenik's Beruf</a> den er aber nicht gerne mag.</p>
+            <p>Referenzen : <a href="#article35" onclick="showArticle('article35')">Domenikaner</a>, <a href="#article36" onclick="showArticle('article36')">Flame Donut</a>, </p>
+            <img src="https://i.ibb.co/f1wb9Cg/IMG-20240923-124830.jpg" height="250" width="200">
+        </section>
+
+        <section id="article35" class="article">
+           <h2>"Domenikanische Republik"</h2>
+            <p>Die Domenikanische Republik ist nach dem berühmten <a href="#article34" onclick="showArticle('article34')">Domenik</a> bennant. Die einwohner dieses Landes nennt man auch Domenikaner.</p>
+            <img src="https://shorturl.at/YcPG5">
+            <p>**das eigentliche Land heißt <a href="https://de.wikipedia.org/wiki/Dominikanische_Republik">Dominikanische Republik</a> aber das ist nicht so an <a href="#article34" onclick="showArticle('article34')">Domenik</a> gebunden wie Domenikanische Republik**</p>
+        </section>
+
+        <section id="article36" class="article">
+            <h2>Flame Donut</h2>
+            <p>Keiner weiß, was es ist. Aber es it seit langer Zeit sein Profilbild auf Whatsapp.</p>
+            <img src="https://static.wikia.nocookie.net/422a48cb-6b52-4484-9fca-6016760a6f77/scale-to-width/370" height="300" width="300">
+        </section>
+        <section id="article37" class="article">
+            <h2>Sammy</h2>
+            <p>Sympatisch, Nett, will aber jeden Menschen auf dieser Welt Töten, sonst ganz Nett.</p>
+            <p>Referenzen : <a href="#article38" onclick="showArticle('article38')">Tiktok</a>, <a href="#article39" onclick="showArticle('article39')">didüdidödü</a></p>
+            <img src="https://i.ibb.co/KNyTxTz/60d7f307-28dd-41e9-acd2-e016dd6fe892.jpg" height="250" width="200">
+        </section>
+
+        <section id="article38" class="article">
+            <h2>Tiktok</h2>
+            <p>Tiktok gucken macht spaß, bis man angestupst wird.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA7Quch1bxqHeEAR1mq4Z6pebMz4FrjwFO1Q&s">
+        </section>
+
+        <section id="article39" class="article">
+            <h2>didüdidödü</h2>
+            <p>Wenn man es singt werden Dinos aus Jurassic World beschwört.</p>
+        </section>
+        <section id="article41" class="article">
+            <h2>Demian</h2>
+            <p>Demian ist ein klassenclown der klasse <a href="#article31" onclick="showArticle('article31')">8B</a></p>
+            <p>Er ist auch <a href="#article26" onclick="showArticle('article26')">klein</a> und mag gerne chicken nuggets.</p>
+            <p>Es wurde schon häufig versucht Ihn auf oder in die Spinde zu tun wo sie auch erwicht wurden und dadurch demian nicht mehr in oder auf die Spinde gesetzt werden darf.</p>
+            <p>Er hat selten streit wird nur häufig von <a href="#article40" onclick="showArticle('article40')">Maximilian</a> und weiteren hochgehoben oder andere sachen mit gemacht.</p>
+            <p>Referenzen: <a href="#article43" onclick="showArticle('article43')">Chicken Nuggets</a></p>
+        </section>
+        <section id="article43" class="article">
+            <h2>Chicken Nuggets</h2>
+            <p>Lieblings gericht von <a href="#article41" onclick="showArticle('article41')">Demian</a> und ist sehr beliebt in der Klasse <a href="#article31" onclick="showArticle('article31')">8B</a></p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWY4T3it0swQa_7M8PwVyvy1XP8Gflqk99TA&s">
+        </section>
+        <section id="article40" class="article">
+            <h2>Maximilian</h2>
+            <p>Max spielt gerne fussball und schlägt </p>
+            <p>Referenzen : <a href="#article42" onclick="showArticle('article42')">Monkey</a>, <a href="#article45" onclick="showArticle('article45')">Gewalt</a>, <a href="#article46" onclick="showArticle('article46')">Fussball</a></p>
+        </section>
+        <section id="article42" class="article">
+            <h2>Monkey</h2>
+            <p>Monkeys gehören in den zoo. <a href="#article7" onclick="showArticle('article7')">Silas</a> hasst Monkeys.</p>
+        </section>
+        <section id="article44" class="article">
+            <h2>Juna</h2>
+            <p>Beste Noten in Jahrgang, aber ist halt einfach Juna was soll man erwarten.</p>
+            <p>ist auch meistens Klassensprecherin</p>
+            <p>Referenzen: <a href="#article31" onclick="showArticle('article31')">8B</a>, <a href="#article54" onclick="showArticle('article54')">Juna hat dir einen snap gesendet</a></p>
+        </section>
+        <section id="article45" class="article">
+            <h2>Gewalt</h2>
+            <p>Gewalt wurde im 13 Jahrhundert erfunden. Es ist eine art, die Liebe auszudrücken, so wie es <a href="#article20" onclick="showArticle('article20')">Tom</a> und <a href="#article33" onclick="showArticle('article33')">Luka</a> tun.</p>
+        </section>
+
+        <section id="article46" class="article">
+            <h2>Fussball</h2>
+            <p>Fussball ist eine Sportart, die viele aus der Schule spielen. <a href="#article23" onclick="showArticle('article23')">Jonas</a> denkt er kann Fussball spielen, doch er trifft eher <a href="#article4" onclick="showArticle('article4')">Mattis</a> Knödel, als das Tor.</p>
+        </section>
+
+        <section id="article47" class="article">
+            <h2>Schießen</h2>
+            <p>Schießen ist eine Sportart, die <a href="#article34" onclick="showArticle('article34')">Domenik</a> und <a href="#article9" onclick="showArticle('article9')">Ben</a> betreiben.</p>
+        </section>
+        <section id="article48" class="article">
+            <h2>Pi</h2>
+            <p>Das einzige was über Pi bekant ist ist, dass er <a href="https://www.faustball.com/#/main/news">Faustball</a> mit <a href="#article4" onclick="showArticle('article4')">Matti</a>, <a href="#article7" onclick="showArticle('article7')">Silas</a> und weiteren bei der Lebenswelt (Faustball) mitmacht</p>
+        </section>
+        <section id="article49" class="article">
+            <h2>Jucha Matti</h2>
+            <p>Ein Parkplatz in Nordkorea der von <a href="#article7" onclick="showArticle('article7')">Silas</a> zu <a href="#article22" onclick="showArticle('article22')">Google Maps</a> hinzugefügt wurde.</p>
+        </section>
+        <section id="article50" class="article">
+            <h2>KlassenGruppe 8B</h2>
+            <p>Meistens benutzt für Streit, Stundenplan und schicken von Lernmaterial.</p>
+            <p><a href="#article41" onclick="showArticle('article41')">Demian</a> wurde aus der KlassenGruppe entfernt, da er immer unpassende sachen in die Gruppe reingeschickt hatte!</p>
+        </section>
+        <section id="article51" class="article">
+            <h2>Jochen Jansen</h2>
+            <p>Einer der <a href="https://www.faustball.com/#/main/news">Faustball</a> Trainer beim <a href="#article16" onclick="showArticle('article16')">(Tus Oberbruch)</a></p>
+        </section>
+        <section id="article52" class="article">
+            <h2>Guido Wennmacher</h2>
+            <p>Einer der <a href="https://www.faustball.com/#/main/news">Faustball</a> Trainer beim <a href="#article16" onclick="showArticle('article16')">(Tus Oberbruch)</a></p>
+            <p>Er ist sehr nett und hat immer eine gute Witze oder andere sachen worüber man Lachen kann.</p>
+        </section>
+        <section id="article54" class="article">
+            <h2>Juna hat dir einen snap gesendet</h2>
+            <p>Jede stille Minute kommt diese Nachicht selbst um 3 uhr nachts.</p>
+            <p><a href="#article44" onclick="showArticle('article44')">Juna</a></p>
+        </section>
+        <section id="article53" class="article">
+            <h2>Nico</h2>
+            <p>Isst alles was er sieht, er würde auch <a href="#article4" onclick="showArticle('article4')">Matti</a> essen und denken, es wäre eine Pommes. Er nimmt  <a href="#article41" onclick="showArticle('article41')">Demian</a> oft durch.</p>
+            <p>Referenzen : <a href="#article43" onclick="showArticle('article43')">Chicken Nuggets</a>, <a href="#article55" onclick="showArticle('article55')">Stammkunde</a></p>
+        </section>
+  
+        <section id="article55" class="article">
+            <h2>Stammkunde</h2>
+        </section>
+        <section id="article57" class="article">
+            <h2>Spitznamen/andere Namen:</h2>
+            <h4>A</h4>
+            <h4>B</h4>
+            <a href="#article10" onclick="showArticle('article10')">Benjamin Blümchen</a>
+            <h4>C</h4>
+            <h4>D</h4>
+            <h4>E</h4>
+            <h4>F</h4>
+            <h4>G</h4>
+            <h4>H</h4>
+            <h4>I</h4>
+            <h4>J</h4>
+            <p><a href="#article24" onclick="showArticle('article24')">Jonas Ai</a></p>
+            <h4>K</h4>
+            <h4>L</h4>
+            <h4>M</h4>
+            <p><a href="#article5" onclick="showArticle('article5')">Mochi</a></p>
+            <h4>N</h4>
+            <h4>O</h4>
+            <h4>P</h4>
+            <h4>Q</h4>
+            <h4>R</h4>
+            <h4>S</h4>
+            <h4>T</h4>
+            <h4>U</h4>
+            <h4>V</h4>
+            <h4>W</h4>
+            <h4>X</h4>
+            <h4>Y</h4>
+            <h4>Z</h4>
+        </section>
+        <section id="article59" class="article">
+            <h2>Wichtige Wörter:</h2>
+            <h4>A</h4>
+            <h4>B</h4>
+            <h4>C</h4>
+            <h4>D</h4>
+            <h4>E</h4>
+            <h4>F</h4>
+            <h4>G</h4>
+            <p><a href="#article26" onclick="showArticle('article26')">Goblin</a></p>
+            <h4>H</h4>
+            <p><a href="#article30" onclick="showArticle('article30')">HÄÄÄ</a></p>
+            <h4>I</h4>
+            <h4>J</h4>
+            <p><a href="#article24" onclick="showArticle('article24')">Jonas Ai</a></p>
+            <h4>K</h4>
+            <h4>L</h4>
+            <h4>M</h4>
+            <p><a href="#article42" onclick="showArticle('article42')">Monkey</a></p>
+            <h4>N</h4>
+            <h4>O</h4>
+            <h4>P</h4>
+            <p><a href="#article29" onclick="showArticle('article29')">Pick Me</a></p>
+            <h4>Q</h4>
+            <h4>R</h4>
+            <h4>S</h4>
+            <h4>T</h4>
+            <p><a href="#article21" onclick="showArticle('article21')">Toms Schlüpfer</a></p>
+            <h4>U</h4>
+            <h4>V</h4>
+            <h4>W</h4>
+            <p><a href="#article32" onclick="showArticle('article32')">WAS?</a></p>
+            <h4>X</h4>
+            <h4>Y</h4>
+            <h4>Z</h4>
+        </section>  
+        <section id="article60/1" class="article">
+            <h2>schrei des Domenikaners 1</h2>
+            <p>Am 27. September 2019 Wurde Ich eingestellt in den Bier Laden.</p>
+            <p>Ich brauchte Geld, um mir Essen zu kaufen.</p>
+            <p>Da sonst niemand anderes mich akzeptierte.</p>
+            <p>Am anfang dachte ich es wäre ein Normaler Job für den mich Ben benötigte.</p>
+            <p>Aber das gedacht zu haben bereue ich jetzt.</p>
+            <p>in den ersten Tagen ist noch nichts besonderes passiert. nur amusierende Kuh kostüme.</p>
+            <p>Aber ich hätte schon verdacht spüren können als ich sie nie die kostüme wechseln sehen habe, oder als Ben mir den Job gab.</p>
+            <p>Ich habe mich gefragt, warum er mich so schnell eingestellt hatte obwohl ich keine erfahrung hatte.</p>
+            <p>nach jedem Tag kam aber auch eine nacht die ich durchleben musste.</p>
+            <p>Ich musste die meiste Zeit in einem dunklen Raum verbringen und Schlafen.</p>
+            <p>Ich war so müde, dass ich mich nicht mehr bewegen konnte, weil der Stuhl viel zu ungemütlich war.</p>
+            <p>Ich konnte mich, aber auch nicht beschweren, weil ich Angst hatte, dass Ben mich feuern würde.</p>
+            <p>Nach dem ersten Tag ging es mir aber noch gut und ich habe viel gegessen, dass ich besser durch die Zeit kam.</p>
+            <p>Am zweiten war es aber schlechter als beim vorherigen, da ich noch schmerzen vom letzten hatte.</p>
+            <p>Am zweiten Tag fragte mich auch ein Betrunkener, ob ich auch eine der Kühe sei und ich lachte nur schmerzhaft.</p>
+            <p>In der zweiten Nacht war es besser als bei der ersten, weil ich mich nicht mehr so unwohl fühlte.</p>
+            <p>Aber ich wachte auf einmal auf und hörte ein lautes Geräusch, das mich erschreckte.</p>
+            <p>Es hörte sich an wie etwas was um fiel.</p>
+            <p>Ich dachte mir, aber nicht viel und schlief weiter.</p>
+            <p>Am dritten Tag war meine laune viel schlechter als bei den letzten, aber ich kaufte mir einen gemütlicheren stuhl.</p>
+            <p>Ich fragte einen anderen Angestellten, ob er auch so viel schmerzen hatte, aber er sagte nein.</p>
+            <p>Ich sagte dann einfach "Ich sitzte auf einem Stuhl und du stehst" und er lachte.</p>
+            <p>Dann antwortete er mir: "Ich wünschte ich könnte die ganze Zeit auf einem Stuhl sitzen."</p>
+            <p>Ich war nicht in der Laune zu lachen.</p>
+            <p>Der Rest des Tages verging wie im Flug bis Ben rein kam und mir sagte: "und wie gehts dir hier beim Job" und drückte mir 20$ in die Hand.</p>
+            <p>Ich sagte ihm, dass es mir gut ginge und danke ihm für die 20$.</p>
+            <h3>Seite 1/4</h3> <button href="#article60/2" onclick="showArticle('article60/2')">Nächste Seite</button>
+        </section>
+        <section id="article60/2" class="article">
+            <h2>schrei des Domenikaners 1</h2>
+            <p>Ich packte schnell das Geld in meine Tasche.</p>
+            <p>Ben sagte schnell: "Ich muss jetzt gehen, aber ich werde zurück kommen."</p>
+            <p>Ich nickte ihm zu und er ging.</p>
+            <p>das war das einzige was ich von ihm gehört hatte, seitdem ich hier arbeitete.</p>
+            <p>Ich dachte mir, dass er vielleicht viel zu tun hat.</p>
+            <p>Ich ging dann in die Küche, um mir ein Sandwich zu machen.</p>
+            <p>Das tat mir sehr gut und half um den tag zu überstehen.</p>
+            <p>Die nacht ging gut bis ich schritte hörte, aber ich dachte mir, dass es nur was weil ich zu wenig getrunken habe.</p>
+            <p>aber sie wurden lauter und ich hörte auch dehnende metall federn.</p>
+            <p>Ich dachte mir nichts bis ich daran dachte, dass ich der einzige bin, der hier an Nacht arbeitet.</p>
+            <p>also schloss ich schnell die tür und versteckte mich</p>
+            <p>Ich hörte dann wie es in die Küche ging und wie es sich an meinem Raum Vorbei bewegte.</p>
+            <p>Ich dachte mir, dass es vielleicht ein Dieb ist, aber jetzt weiß ich, dass ich sehr falsch lag.</p>
+            <p>Dann hörte ich nichts mehr und wartete bis meine Zeit um war, und ging nach hause</p>
+            <p>Am nächsten Tag kam Ben wieder und sagte mir, dass ich jetzt leicht mehr Geld verdiene.</p>
+            <p>Ich erzählte ihm vom vorfall des letzten Tages und er sagte mir, dass ich mich nicht mehr um es kümmern muss, da es nur die heizung war und ich es mir vorstellte.</p>
+            <p>Ich sagte dass ich ihm glaubte, aber ich wusste, dass es nicht die heizung war.</p>
+            <p>Also verging wieder der Tag und ich schluf wieder in dem Raum.</p>
+            <p>Als ich aufwachte, hörte ich wieder Schritte, aber diesmal war es nicht so laut.</p>
+            <p>Ich war aber so müde ich schlief wieder ein.
+            <p>Als ich aufwachte, erschreckte ich mich sehr stark, da eine der Kühe mich von oben ansah. Das gesicht war aufgerissen und die Augen waren zu.</p>
+            <h3>Seite 2/4</h3> <button href="#article60/1" onclick="showArticle('article60/1')">Vorherige Seite</button> <button href="#article60/3" onclick="showArticle('article60/3')">Nächste Seite</button>
+        </section>
+        <section id="article60/3" class="article">
+            <h2>schrei des Domenikaners 1</h2>
+            <p>Ich war so schockiert, dass ich mich nicht bewegen konnte.</p>
+            <p>Aber ich sah, dass meine Zeit um war also ging ich so leise wie möglich aus dem Raum.</p>
+            <p>Als ich gerade raus war, bewegte sich die kuh leicht.</p>
+            <p>Ich rannte aus dem Gebäude und zu meinem Auto, als'ich einstieg, sah ich, dass die selbe kuh mich durch ein Fenster ansah.</p>
+            <p>Ich fuhr schnell los und dachte mir, dass ich mich nicht mehr um das kümmern muss.</p>
+            <p>Aber damit lag ich sehr falsch.</p>
+            <p>Als ich am fünften Tag zur Arbeit kam, sah ich, dass alle normal waren.</p>
+            <p>Ich ging in den Raum und sah, dass die kuh nicht mehr da war.</p>
+            <p>Ich erzählte allen mittarbeitern vom letzten Tag, aber alle dachten ich wäre auf drogen.</p>
+            <p>Ich sagte ihnen, dass ich nicht auf drogen bin, und das real war, aber sie glaubten mir nicht.</p>
+            <p>Deswegen rufte ich Ben an, aber er sagte mir nur, dass es ein fehler in the programmierung gab und es jetzt besser sei.</p>
+            <p>Ich glaubte ihm und hoffte es sei wirklich so.</p>
+            <p>Aber ich konnte nicht schlafen wegen letzter Nacht also blieb ich Wach und wartete die zeit ab.</p>
+            <p>Als es schon sehr spät war, hörte ich einen Lauten Schrei. Es hörte sich an wie der schrei der einzigen mittarbeiterin, die hier noch zu der zeit arbeitet.</p>
+            <p>Ich dachte ihr wäre ein stuhl runtergefallen oder etwas anderes.</p>
+            <p>Ich ging in zu dem Ort wo er herkam und sah nur die mittarbeiterin, die an der wand hing.</p>
+            <p>Mit einem Gesicht, das aufgerissen war und eine scherbe die durchs herzen steckte.</p>
+            <p>Ich drehte mich um und wollte rennen aber ich sah, dass 2 kühe beide wege blockierten. Ich sah auch, dass sie beide mich ansahen.</p>
+            <p>Sie kamen näher und näher, ich wusste nicht was ich tun sollte.</p>
+            <p>Ich sie sagten wörter zu mir, aber ich verstand sie nicht.</p>
+            <p>Dann kam noch eine Dritte Kuh und sie alle kamen näher und näher.</p>
+            <p>Bis alle zusammen Sagten : "You Die."</p>
+            <p>Ich sah eine chance zu rennen also rannte ich los, aber stolperte über ein tischbein.</p>
+            <p>Ich fiel auf den Boden und sah die kühe wie sie auf mich zu liefen.</p>
+            <h3>Seite 3/4</h3> <button href="#article60/2" onclick="showArticle('article60/2')">Vorherige Seite</button> <button href="#article60/4" onclick="showArticle('article60/4')">Nächste Seite</button>
+        </section>
+        <section id="article60/4" class="article">
+            <h2>schrei des domenikaners 1</h2>
+            <p>Eins Kratzte mich am Bein und ich hatte Höllische schmerzen.</p>
+            <p>Aber ich wachte auf.</p>
+            <p>Ich war in meinem Bett und es war Morgen.</p>
+            <p>Ich war so erleichtert, dass es nur ein Traum war.</p>
+            <p>Aber ich hatte immer noch die schmerzen im bein.</p>
+            <p>Ich schaute auf mein Bein und hatte immer noch den Kratzer.</p>
+            <p>Ich dachte mir, dass es vielleicht kein traum war.</p>
+            <p>Ich ging zur arbeit um nachzusehen.</p>
+            <p>Und das einzige was ich sah war Polizei und ein Krankenwagen.</p>
+            <p>Ich ging zu dem Ort, aber wurde nicht rein gelassen, wegen einem Mord Schauplatz.</p>
+            <p>Ich ging zu Ben und fragte ihn, was passiert ist, und er sagte ein schrecklicher Mord ist passiert auf eine mittarbeiterin</p>
+            <p>Ich dachte mir: "Also war es kein Traum." und war beängstigt.</p>
+            <p>ich ging nach Hause und schaute mich um, aber sah nichts Ungewöhnliches.</p>
+            <p>Ich ging ins Bett und schlief ein, da ich viel zu müde war.</p>
+            <p>Als ich aufwachte, hörte ich dass jemand an der Tür war.</p>
+            <p>Ich ging zur Tür und sah, dass es ein Polizist war.</p>
+            <p>Er sagte mir, dass ich ein wichtiger Zeuge bin und dass ich zur Befragung kommen muss.</p>
+            <p>Ich ging mit ihm zur Polizei und wurde befragt, aber die polizei glaubte mir nicht was ich erlebte</p>
+            <p>Ich zeigte ihnen die Kratzer auf meinem Bein, aber sie glaubten mir nicht.</p>
+            <p>Ich sagte ihnen, dass ich nicht lüge, und sie glaubten mir dass ich es nicht schuld war, aber nicht meine geschichte.</p>
+            <h3>Seite 4/4</h3> <button href="#article60/3" onclick="showArticle('article60/3')">Vorherige Seite</button>
+        </section>
+        <section id="article61" class="invisible-article">
+            <h2>Arne</h2>
+            <p>Arne auch Eierkopf, Caliou oder Herr Schnick-Schnack ist der Klassen Lehrer der <a href="#article31" onclick="showArticle('article31')">8B</a>.</p>
+            <p>Er ist auch bekannt für seine Agressive haltunng und aussuchen von welchen Schülern er bevorzugt.</p>
+            <p>Ein paar der Schüler die er nicht mag sind: <a href="#article7" onclick="showArticle('article7')">Silas</a>, <a href="#article41" onclick="showArticle('article41')">Demian</a> und <a href="#article40" onclick="showArticle('article40')">Maximilian</a>.</p>
+        </section>
+        <section id="article62" class="invisible-article">
+            <h2>Schwarz Markt Händler</h2>
+            <p>Der Schwarz-Markt Händler Verkauft einfach alles was er bei sich hat ohne Grund.</p>
+            <p>Manchmal ist seine Ware <a href="#article63" onclick="showArticle('article63')">Illegal</a>, aber auch nur selten</p>
+        </section>
+        <section id="article63" class="invisible-article">
+            <h2>DarkWeb</h2>
+            <p>Wichtigste einträge:</p>
+            <p><a href="#article61" onclick="showArticle('article61')">Arne</a></p>
+        </section>
+    </main>
+
+    </main>
+
+    <script>
+
+
+    function showArticle(articleId) {
+        const articles = document.querySelectorAll('.article, .invisible-article'); // Include the new class
+        const homeSection = document.getElementById('home');
+
+        articles.forEach(article => {
+        article.style.display = 'none'; // Hide all articles
+        });
+
+        homeSection.style.display = 'none'; // Hide the home section
+
+        const selectedArticle = document.getElementById(articleId);
+        if (selectedArticle.classList.contains('invisible-article')) {
+        selectedArticle.style.display = 'block'; // Show the selected invisible article
+        } else {
+        selectedArticle.style.display = 'block'; // Show the selected visible article
+        }
+    }   
+        var tag = document.getElementById('demo');
+        var button = document.querySelector('button');
+        button.addEventListener('click', function(){
+        tag.classList.toggle('demo');
+        });
+
+        function searchArticles() {
+            const input = document.getElementById('search').value.toLowerCase();
+            const articles = document.querySelectorAll('.article');
+
+            articles.forEach(article => {
+                const title = article.querySelector('h2').textContent.toLowerCase();
+                if (title.includes(input)) {
+                    article.style.display = 'block'; // Show matching articles
+                } else {
+                    article.style.display = 'none'; // Hide non-matching articles
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>
